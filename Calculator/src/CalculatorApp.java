@@ -62,6 +62,13 @@ public class CalculatorApp {
 		else if (op.equals("/")){
 			answer = fnum / snum;
 		}
+		else if (op.equals("!")){
+			double fact = 0;
+			for(i=1;i<=fnum;i++){    
+	      			fact=fact*i;    
+			}  
+			answer = fact;
+		}
 		else{
 			System.out.println("That isn't any of the operators.");
 		} // if no operator is entered then they are told and no calculation is done.
